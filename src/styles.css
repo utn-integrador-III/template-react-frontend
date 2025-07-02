@@ -1,0 +1,178 @@
+header {
+  background: linear-gradient(90deg, #1976d2 0%, #42a5f5 100%);
+  color: #fff;
+  padding: 1.5rem 2rem;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+#logo {
+  width: 48px;
+  height: 48px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2rem;
+  flex: 1;
+}
+
+header h1 a {
+  color: #fff;
+  text-decoration: none;
+}
+
+
+/* ...existing code... */
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 2rem; /* space between menu items */
+  align-items: center;
+}
+
+nav li {
+  display: inline;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  transition: background 0.2s;
+}
+
+nav a:hover {
+  background: #e0e0e0;
+  color: #1976d2;
+}
+/* ...existing code... */
+
+
+/* ...existing code... */
+aside {
+  background: #f5f7fa;
+  border-radius: 8px;
+  padding: 1.5rem 1rem;
+  margin: 1.5rem 0;
+  box-shadow: 0 2px 8px rgba(30, 136, 229, 0.07);
+  max-width: 320px;
+}
+
+aside section + section {
+  margin-top: 1.5rem;
+  border-top: 1px solid #e3e8ee;
+  padding-top: 1rem;
+}
+
+aside h4 {
+  margin: 0 0 0.5rem 0;
+  color: #1976d2;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+aside p {
+  margin: 0 0 0.5rem 0;
+  color: #333;
+  font-size: 0.97rem;
+}
+
+aside a {
+  display: block;
+  color: #1565c0;
+  text-decoration: none;
+  margin-bottom: 0.4rem;
+  font-size: 0.97rem;
+  border-radius: 4px;
+  padding: 0.2rem 0.4rem;
+  transition: background 0.2s;
+}
+
+aside a:hover {
+  background: #e3f2fd;
+  color: #0d47a1;
+}
+/* ...existing code... */
+
+/* Add this to your styles.css */
+/* ...existing code... */
+
+#container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 2rem;
+  max-width: 1100px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+main {
+  flex: 2;
+  background: #fff;
+  padding: 2rem 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(30, 136, 229, 0.07);
+}
+
+aside {
+  flex: 1;
+  margin-left: 1rem;
+}
+
+/* Responsive layout for small screens */
+@media (max-width: 900px) {
+  #container {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  aside {
+    margin-left: 0;
+    margin-top: 1rem;
+  }
+}
+
+/* ...existing code... */
+/* Add these styles at the end of your file or before your media queries */
+
+/* Ensure the page takes full height and footer stays at the bottom */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+#container {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 2rem;
+  max-width: 1100px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+footer {
+  width: 100%;
+  text-align: center;
+  padding: 1rem 0;
+  background: #f5f7fa;
+  color: #333;
+  margin-top: auto;
+  font-size: 0.97rem;
+  border-top: 1px solid #e3e8ee;
+}

@@ -1,0 +1,44 @@
+{
+  "employees": [
+    {
+      "username": "Axle",
+      "password": "1234",
+      "id": "2f53"
+    },
+    {
+      "username": "Jane",
+      "password": "1234",
+      "id": "9899"
+    },
+    {
+      "username": "Mary",
+      "password": "1234",
+      "id": "2e6e"
+    },
+    {
+      "id": "ff12",
+      "username": "ever",
+      "password": "ever123"
+    },
+    {
+      "id": "0785",
+      "username": "julian",
+      "password": "123"
+    },
+    {
+      "id": "aacf",
+      "username": "maria",
+      "password": "123"
+    },
+    {
+      "id": "63f3",
+      "username": "Patrizia",
+      "password": "12345"
+    },
+    {
+      "id": "7302",
+      "username": "alfredo",
+      "password": "123"
+    }
+  ]
+}
