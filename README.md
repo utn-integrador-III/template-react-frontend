@@ -1,6 +1,8 @@
 # To run the project locally
 1- Open the project folder in Visual Code
+
 2- Open the terminal and run the following command to install dependencies ` npm install `
+
 3- To run the local db.json accesible as an api, open the command prompt terminal and run the following:
 ` npx json-server --watch <db_folder_ath> --port <port_number>`
 
@@ -8,8 +10,11 @@
 ```
  npx json-server --watch Documents/template-react-frontend/src/data/db.json --port 3000
  ```
+
 4- Change in the [environment.jsx](environment.jsx) file the backend url.
+
 5- To run the web project execute the following command: ` npm run dev `
+
 6- Acces the web app in the browser: http://localhost:5173 the port could change when running the application.
 
 -------------
