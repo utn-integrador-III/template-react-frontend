@@ -11,7 +11,12 @@
  npx json-server --watch Documents/template-react-frontend/src/data/db.json --port 3000
  ```
 
-4- Change in the [environment.jsx](environment.jsx) file the backend url.
+4- Create a ` .env file ` and copy/paste the variables from [.env.example](.env.example) and replace the values of the backend url.
+
+**Example of the .env file:**
+```
+VITE_APP_API_URL=http://localhost:3000
+ ```
 
 5- To run the web project execute the following command: ` npm run dev `
 

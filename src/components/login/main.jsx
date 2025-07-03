@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import { environment } from '../../../environment';
 
 class Main extends Component {
     constructor(props) {
@@ -18,7 +17,7 @@ class Main extends Component {
 
     handleSubmit = (event) => {
         event.preventDefault();
-        const apiUrl = environment.REACT_APP_API_URL || 'http://localhost:3001' ;
+        const apiUrl = `${import.meta.env.VITE_APP_API_URL}`; // Use the environment variable for the API URL';
         fetch(`${apiUrl}/employees?username=${encodeURIComponent(this.state.username)}&password=${encodeURIComponent(this.state.password)}`,
             {
                 method: 'GET',

@@ -1,5 +1,4 @@
-import React, { Component } from "react";
-import { environment } from '../../../environment'; // Adjust the import path as necessary    
+import React, { Component } from "react"; 
 
 class Main extends Component {
     constructor(props){
@@ -9,8 +8,7 @@ class Main extends Component {
         };
     }
     componentDidMount() {
-        // Fetch the list of employees from the API when the component mounts
-        const apiUrl = environment.REACT_APP_API_URL || 'http://localhost:3001';
+        const apiUrl = `${import.meta.env.VITE_APP_API_URL}`; // Use the environment variable for the API URL';
         fetch(`${apiUrl}/employees`)
             .then(response => response.json())
             .then(data => this.setState({ allEmployees: data }))
